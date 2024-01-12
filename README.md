@@ -177,11 +177,11 @@ That's the story of how I come to Ray Data.
 4. It's easy to generate Parquet files from Hugging Face Dataset, we use Parquet balance the storage and loading cost,
    also it's a good fit for Ray Data to consume. (For relationship with Arrow and Parquet, see [here](https://arrow.apache.org/faq/))
 
-## Why Ray Data?
+### Why Ray Data?
 1. Distributed data processing is hard. Ray Data makes it easy. It's a high-level API for distributed computing. You don't need
    to worry about the details of distributed computing.
 2. The actor model is a good fit for distributed data processing. Ray Data is built on top of Ray, which is a distributed
    computing framework based on the actor model. It's easy to scale up and down the computing resources with Ray.
 
-## Why not ray.data.from_huggingface?
+### Why not ray.data.from_huggingface?
 1. Directly loading from Hugging Face Dataset is not paralleled according to the Ray's Doc.
